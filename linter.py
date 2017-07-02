@@ -3,7 +3,7 @@
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
 # Written by Aparajita Fishman
-# Copyright (c) 2015-2016 The SublimeLinter Community
+# Copyright (c) 2015-2017 The SublimeLinter Community
 # Copyright (c) 2013-2014 Aparajita Fishman
 #
 # License: MIT
@@ -15,9 +15,9 @@ from SublimeLinter.lint import Linter, util
 
 
 class Lua(Linter):
-    """Provides an interface to luac -p."""
+  """Provides an interface to moon -l."""
 
-    syntax = 'lua'
-    cmd = 'luac -p * -'
-    regex = r'^.+?:.+?:(?P<line>\d+): (?P<message>.+?(?:near (?P<near>\'.+\')|$))'
-    error_stream = util.STREAM_STDERR
+  syntax = 'moon
+  cmd = 'moon -l * -'
+  regex = r'^.+?:.+?:(?P<line>\d+): (?P<message>.+?(?:near (?P<near>\'.+\')|$))'
+  error_stream = util.STREAM_STDERR
