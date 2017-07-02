@@ -1,10 +1,10 @@
 SublimeLinter-lua
 -------------------------------
-This linter plugin for SublimeLinter provides an interface to luac.
+This linter plugin for SublimeLinter provides an interface to moon -l.
 
 ** IMPORTANT! **
 
 Before this plugin will activate, you *must*
 follow the installation instructions here:
 
-https://github.com/SublimeLinter/SublimeLinter-lua
+https://github.com/SublimeLinter/SublimeLinter-moonscript
